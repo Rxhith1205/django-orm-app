@@ -18,7 +18,8 @@ Include your ER diagram here
 Write your own steps
 
 ## PROGRAM
-''''
+'''
+
 admin.py
 
 from django.contrib import admin
@@ -38,7 +39,8 @@ class Employee (models.Model):
 
 class EmployeeAdmin(admin.ModelAdmin):
     list_display=('eid','name','salary','age','email')
-''''
+
+'''
 
 ## OUTPUT
 ![Untitled](https://github.com/Rxhith1205/django-orm-app/assets/147473311/1a4b815e-0645-4a7c-be9e-222f03eb9069)
