@@ -23,7 +23,6 @@ Include your code here
 
 ## OUTPUT
 
-Include the screenshot of your admin page.
-
+![Alt text](Untitled.jpeg)
 
 ## RESULT
