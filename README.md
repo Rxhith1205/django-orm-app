@@ -18,11 +18,30 @@ Include your ER diagram here
 Write your own steps
 
 ## PROGRAM
+''''
+admin.py
 
-Include your code here
+from django.contrib import admin
+from .models import Employee,EmployeeAdmin
+admin.site.register(Employee,EmployeeAdmin)
+
+modles.py
+
+from django.db import models
+from django.contrib import admin
+class Employee (models.Model):
+    eid=models.CharField(max_length=20,help_text="Employee")
+    name=models.CharField(max_length=100)
+    salary=models.IntegerField()
+    age=models.IntegerField()
+    email=models.EmailField()
+
+class EmployeeAdmin(admin.ModelAdmin):
+    list_display=('eid','name','salary','age','email')
+''''
 
 ## OUTPUT
+![Untitled](https://github.com/Rxhith1205/django-orm-app/assets/147473311/1a4b815e-0645-4a7c-be9e-222f03eb9069)
 
-![Alt text](Untitled.jpeg)
 
 ## RESULT
